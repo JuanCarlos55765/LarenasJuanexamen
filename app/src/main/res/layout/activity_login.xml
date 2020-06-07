@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="113dp"
+        android:src="@drawable/logo"/>
+
+
+
+    <EditText
+        android:id="@+id/etUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/usuario"
+        android:paddingTop="30dp"
+        android:inputType="text"
+        android:layout_below="@+id/imageView"
+        android:autofillHints="">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/clave"
+        android:paddingTop="30dp"
+        android:inputType="textPassword"
+        android:layout_below="@+id/etUsuario"
+        android:autofillHints="">
+
+    </EditText>
+
+    <Button
+
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ingresar"
+        android:onClick="Validar"
+        android:layout_below="@+id/etPassword">
+
+    </Button>
+
+</RelativeLayout>

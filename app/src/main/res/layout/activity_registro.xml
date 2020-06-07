@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".Registro"
+    tools:ignore="LabelFor">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="113dp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usuario_conectado"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_weight="0.5"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="left"
+            android:textSize="16sp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorPrimary">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Nombre">
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etMontoInicial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:inputType="numberDecimal"
+        android:hint="Monto Inicial">
+
+    </EditText>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/pago_mensual"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_weight="0.5"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvPagoMensual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="left"
+            android:textSize="16sp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorPrimary">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculo"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_weight="0.5"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvCalculo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="left"
+            android:textSize="16sp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorPrimary">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnCalcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calcular"
+        android:onClick="calcular">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:onClick="guardar">
+
+    </Button>
+
+</LinearLayout>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    tools:context=".Resumen"
+    tools:ignore="LabelFor">
+
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="113dp"
+        android:src="@drawable/logo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/usuario_conectado"
+            android:gravity="right"
+            android:textSize="16sp"
+            android:layout_weight="0.5"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvUsuario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="left"
+            android:textSize="16sp"
+            android:layout_weight="0.5"
+            android:textColor="@color/colorPrimary">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Nombre:"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textSize="16sp"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Total a pagar:"
+            android:textSize="16sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:textStyle="bold">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="Respuestas Encuesta"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary">
+
+    </TextView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="¿Por qué eligió este centro?"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvRText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="10dp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="¿Qué deportes practica?"
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvRCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="10dp"
+            android:textStyle="bold">
+        </TextView>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Está interesado en aprender otro idioma aparte de inglés."
+            android:textSize="16sp"
+            android:textStyle="bold"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvRRadio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:paddingTop="10dp"
+            android:textStyle="bold">
+        </TextView>
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
